@@ -31,11 +31,11 @@ LookForABook/
 **1. Clone the repository**
 ```bash
 git clone https://github.com/ashneetrathore/LookForABook.git
+cd LookForABook
 ```
 
 **2. Install dependencies**
 ```bash
-cd LookForABook
 pip install -r requirements.txt
 ```
 
