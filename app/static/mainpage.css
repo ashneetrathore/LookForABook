@@ -1,0 +1,110 @@
+html {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+body {
+    background-size: cover;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 12, 121, 1) 35%, rgba(169, 0, 255, 1) 100%);
+    height: 100%;
+    overflow-y: auto;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Fredoka One', cursive;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 5px;
+    margin-top: -30px;
+}
+
+form {
+    background-color: #ccccff;
+    width: 85vw;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input {
+    all: unset;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font: 30px;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+ ::placeholder {
+    color: #000000;
+    opacity: 0.7;
+}
+
+svg {
+    color: #000000;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+#test1 {
+    height: 5000px;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    width: 85vw;
+}
+
+.flex-container>div {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font: 30px;
+    color: #000000;
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.left-half {
+    background-color: #ccccff;
+    border-radius: 5px 0px 0px 5px;
+    flex: 1;
+    padding: 1rem;
+    font: 15px;
+}
+
+.right-half {
+    background-color: #ccccff;
+    border-radius: 0px 5px 5px 0px;
+    flex: 1;
+    padding: 1rem;
+    font: 15px
+}
