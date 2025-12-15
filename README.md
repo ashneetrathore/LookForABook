@@ -13,7 +13,7 @@ Look For A Book is a full-stack web application that allows users to search for 
 ## :classical_building: ARCHITECTURE
 The backend, implemented in **Python**, handles incoming search requests from the user, fetches book data from the **Google Books API**, and processes the relevant details (title, author, synopsis, cover image, rating on Google Books, page count, and publication date) for display. The backend defines URL routes (`/` for the home page and `/search` for handling search queries) that the frontend uses to submit queries and receive rendered search results.
 
-The frontend is built with **JavaScript**, **HTML**, and **CSS**, and uses **Flask** with **Jinja2 templating** to render dynamic content. JavaScript handles the submission of the search query by capturing user input and redirecting the browser to the `/search` route. Jinja2 then allows the backend to inject book data directly into the HTML for **server-side rendering**, allowing the search results to appear immediately without additional backend requests. The app was originally deployed on **Heroku** during the hackathon event, but it's no longer live - it can be run locally instead.
+The frontend is built with **JavaScript**, **HTML**, and **CSS**, and uses **Flask** with **Jinja2 templating** to render dynamic content. JavaScript handles the submission of the search query by capturing user input and redirecting the browser to the `/search` route. Jinja2 then allows the backend to inject book data directly into the HTML for **server-side rendering**, allowing the search results to appear immediately without additional backend requests. The app was originally deployed on **Heroku** during the hackathon event, but it is no longer live - it can be run locally instead.
 
 ## :open_file_folder: PROJECT FILE STRUCTURE
 ```bash
@@ -34,11 +34,11 @@ LookForABook/
 **1. Clone the repository**
 ```bash
 git clone https://github.com/ashneetrathore/LookForABook.git
-cd LookForABook
 ```
 
 **2. Install dependencies**
 ```bash
+cd LookForABook
 pip install -r requirements.txt
 ```
 
@@ -49,7 +49,7 @@ cd app
 python3 main.py
 ```
 
-Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to use the book searcher
+Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to use the book searcher.
 
 ## :wrench: TRY IT OUT
 1. After opening the application in your browser, enter the title of a book into the search bar and click the search icon or press `Enter`.
