@@ -14,15 +14,15 @@ For more details, see [Architecture](#classical_building-architecture)
 ![Demo](demo.gif)
 
 ## :classical_building: ARCHITECTURE
-The backend, implemented in **Python** using the **Flask** framework. It handles incoming search requests from the users, fetches book data from the **Google Books API**, and processes the relevant details (title, author, synopsis, cover image, rating on Google Books, page count, and publication date) for display. Flask defines URL routes (`/` for the home page and `/search` for handling search queries) that the frontend uses to submit queries and receive rendered search results.
+The application backend is implemented in **Python** using the **Flask** framework. Flask handles all incoming search requests from the users, defines URL routes (`/` for the home page and `/search` for handling search queries), and manages the flow of the data. When a user submits a search query, Flask receives it via the appropriate route, fetches book data from the **Google Books API**, and processes the relevant details (title, author, synopsis, cover image, rating on Google Books, page count, and publication date) into a structured format.
 
-The frontend is built with **JavaScript**, **HTML**, and **CSS**, and uses Flask with **Jinja2 templating** to render dynamic content. JavaScript handles the submission of the search query by capturing user input and redirecting the browser to the `/search` route. Jinja2 then allows the backend to inject book data directly into the HTML for **server-side rendering**, allowing the search results to appear immediately without additional backend requests. The app was originally deployed on **Heroku** during the hackathon event, but it is no longer live - it can be run locally instead.
+The frontend is built with **JavaScript**, **HTML**, and **CSS**, and uses Flask with **Jinja2 templating** to render dynamic content. First, JavaScript handles the submission of the search query by capturing user input and redirecting the browser to the `/search` route. Flask then passes the processed book data to Jinja2, which dynamically injects it into the HTML template for **server-side rendering**. Finally, the fully rendered HTML page is sent back to the browser, which displays the results immediately. The app was originally deployed on **Heroku** during the hackathon event, but it is no longer live - it can be run locally instead.
 
 ## :open_file_folder: PROJECT FILE STRUCTURE
 ```bash
 LookForABook/
 │── app/
-│   ├── main.py            # Launches Flask frontend, fetches data from Google Books API, and delivers to frontend
+│   ├── main.py            # Launches Flask backend, fetches data from Google Books API, and renders frontend for display
 │   ├── static/
 │   │   │── searchbar.js   # Processes input and sends query to backend
 │   │   └── mainpage.css   # Styles the webpage appearance
