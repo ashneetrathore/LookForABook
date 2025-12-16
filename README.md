@@ -7,8 +7,7 @@ Mentored by Aaron Chen
 
 Look For A Book is a full-stack web application that allows users to search for books by title and view key details, such as cover image, synopsis, and author. The app was developed in a 12-hour time span as a submission for the ZotHacks beginner-friendly hackathon hosted at UCI.
 
-**Tech Stack** | Python, Flask, HTML, CSS, JavaScript, Google Books API\
-For more details, see [Architecture](#classical_building-architecture)
+**Tech Stack** | Python, Flask, HTML, CSS, JavaScript, Google Books API
 
 ## :film_strip: DEMO
 ![Demo](demo.gif)
