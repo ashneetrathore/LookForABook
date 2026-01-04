@@ -9,8 +9,6 @@ Look For A Book is a full-stack web application that allows users to search for 
 
 **Tech Stack** | Python, Flask, HTML, CSS, JavaScript, Google Books API
 
-View more of my full-stack web apps on GitHub [here](https://github.com/stars/ashneetrathore/lists/full-stack)
-
 ## :film_strip: DEMO
 ![Demo](demo.gif)
 
